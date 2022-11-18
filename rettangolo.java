@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class rettangolo {
     float area;
     float base;
@@ -17,5 +19,17 @@ public class rettangolo {
         area= (base*altezza);
         System.out.println("l'area è " +area);
     }
+
+    public void ridimensiona(){
+        System.out.println("inserisci la nuova base");
+        Scanner B = new Scanner(System.in);
+        base=B.nextFloat();
+
+        System.out.println("inserisci la nuova altezza");
+        Scanner A = new Scanner(System.in);
+        altezza=A.nextFloat();
+
+    }
+
 
 }
